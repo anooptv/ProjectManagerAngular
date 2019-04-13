@@ -16,10 +16,10 @@
           <div class="form-group col-md-6">
               <label class="control-label col-sm-4" for="priority">Sort Task By:</label>
             <div class="btn-group">
-              <button class="btn btn-default" type="submit" name="btn1" (click)="sortTask('StartDate')">Start Date</button>
-              <button class="btn btn-default" type="submit" name="btn2" (click)="sortTask('EndDate')">End Date</button>
-              <button class="btn btn-default" type="submit" name="btn1" (click)="sortTask('Priority')">Priority</button>
-              <button class="btn btn-default" type="submit" name="btn2" (click)="sortTask('Status')">Completed</button>
+              <button class="btn btn-default"  name="btn1" (click)="sortTask('StartDate')">Start Date</button>
+              <button class="btn btn-default"  name="btn2" (click)="sortTask('EndDate')">End Date</button>
+              <button class="btn btn-default"  name="btn1" (click)="sortTask('Priority')">Priority</button>
+              <button class="btn btn-default"  name="btn2" (click)="sortTask('Status')">Completed</button>
             </div>
           </div>
         </div>
@@ -48,9 +48,9 @@
                 <td>{{task.EndDate | date:"dd/MM/yyyy" }}</td>
                 <td style="width:180px">
                   <div class="btn-group tablegrp" role="group">
-                      <button class="btn btn-success" type="submit" style="margin:0 3px;" [routerLink] ="['/task','edit', {id:task.TaskID}]">Edit</button>
+                      <button class="btn btn-success"  style="margin:0 3px;" [routerLink] ="['/task','edit', {id:task.TaskID}]">Edit</button>
                       <!-- <button class="btn btn-success" style="margin:0 3px;" (click) = "edit(task.TaskID)">Edit</button> -->
-                      <button class="btn btn-success" type="submit" style="margin:0 3px;"  (click)="endTask(task.TaskID)">End Task</button>
+                      <button class="btn btn-success"  style="margin:0 3px;"  (click)="endTask(task.TaskID)">End Task</button>
                   </div>
                 </td>
               </tr>
