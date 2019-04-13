@@ -3,7 +3,7 @@
     <div class="col-md-1"></div>
     <div class="col-md-9 ">
       <form (ngSubmit)="onSubmit(taskForm)" name="taskForm"  #taskForm="ngForm" class="form-horizontal">
-         <input type="hidden" name="taskID" #taskID="ngModel" [(ngModel)]="viewModel.TaskID"> 
+         <!--<input type="hidden" name="taskID" #taskID="ngModel" [(ngModel)]="viewModel.TaskID">--> 
 
         <div class="form-group">
           <!-- <input type="hidden" [(ngModel)]="viewModel.ProjectID" #userID="ngModel" name="hiddenProjectID" /> -->
@@ -79,7 +79,7 @@
               <input type="text" [(ngModel)]="viewModel.UserName" id="userName" required class="form-control" name="userName"
                 disabled />
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button" name="btnUserName" (click)="OpenUserPopup()" [disabled]="viewModel.IsParentTask">Search</button>
+                <button class="btn btn-default"  name="btnUserName" (click)="OpenUserPopup()" [disabled]="viewModel.IsParentTask">Search</button>
                 <!-- <button class="btn btn-default" type="button" name="btnUserName" (click)="Open(content)" >Search</button> -->
 
               </span>
