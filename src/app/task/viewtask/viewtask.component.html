@@ -48,9 +48,9 @@
                 <td>{{task.EndDate | date:"dd/MM/yyyy" }}</td>
                 <td style="width:180px">
                   <div class="btn-group tablegrp" role="group">
-                      <button class="btn btn-success" style="margin:0 3px;" [routerLink] ="['/task','edit', {id:task.TaskID}]">Edit</button>
+                      <button class="btn btn-success" type="submit" style="margin:0 3px;" [routerLink] ="['/task','edit', {id:task.TaskID}]">Edit</button>
                       <!-- <button class="btn btn-success" style="margin:0 3px;" (click) = "edit(task.TaskID)">Edit</button> -->
-                      <button class="btn btn-success"  style="margin:0 3px;"  (click)="endTask(task.TaskID)">End Task</button>
+                      <button class="btn btn-success" type="submit" style="margin:0 3px;"  (click)="endTask(task.TaskID)">End Task</button>
                   </div>
                 </td>
               </tr>
