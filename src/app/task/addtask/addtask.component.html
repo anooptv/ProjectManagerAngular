@@ -79,7 +79,7 @@
               <input type="text" [(ngModel)]="viewModel.UserName" id="userName" required class="form-control" name="userName"
                 disabled />
               <span class="input-group-btn">
-                <button class="btn btn-default"  name="btnUserName" (click)="OpenUserPopup()" [disabled]="viewModel.IsParentTask">Search</button>
+                <button class="btn btn-default" type="submit" name="btnUserName" (click)="OpenUserPopup()" [disabled]="viewModel.IsParentTask">Search</button>
                 <!-- <button class="btn btn-default" type="button" name="btnUserName" (click)="Open(content)" >Search</button> -->
 
               </span>
