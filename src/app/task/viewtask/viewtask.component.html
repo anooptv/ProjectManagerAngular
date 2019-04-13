@@ -1,7 +1,7 @@
 <div class="container">
-  <div [hidden]="submitted">
+  <div >
     <div class="col-md-12 ">
-      <form (ngSubmit)="onSubmit(viewTaskForm)" name="viewTaskForm" class="form-horizontal">
+      <form (ngSubmit)="onSubmit(viewTaskForm)" name="viewTaskForm" #viewTaskForm="ngForm" class="form-horizontal">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label class="control-label col-sm-2" for="priority">Project:</label>
