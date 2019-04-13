@@ -1,6 +1,6 @@
 <div>
   <div class="container">
-    <div [hidden]="submitted">
+    <div>
       <form (ngSubmit)="onSubmit(userForm)" name="userForm" #userForm="ngForm" class="form-horizontal">
         <input type="hidden" name="userID" #userID="ngModel" [(ngModel)]="user.userID">
         <div class="col-md-1"> </div>
